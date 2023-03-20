@@ -1,0 +1,6 @@
+dmesg
+objdump -d ./hacked | less
+
+python3 ./exploit.py | ./hacked -> piping the output to the exec ./hacked
+
+(python3 exploit.py; cat) | ./hacked
